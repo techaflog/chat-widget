@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chat Widget</title>
+</head>
+<body>
+    <script>
+        window._2chatConfig = {
+            phoneNumber: '+917483048220',
+            accountName: 'Welcome!',
+            statusMessage: 'We typically reply within 1 hour',
+            chatMessage: 'Hey there! 👋\nHow can we help you?',
+            placeholder: 'Type your message...',
+            position: 'right',
+            colorScheme: 'automatic',
+            showNotification: true,
+        };
+
+        (function(d, s, id) {
+            var js, fjs = d.getElementsByTagName(s)[0];
+            if (d.getElementById(id)) return;
+            js = d.createElement(s); js.id = id;
+            js.src = 'https://widgets.2chat.io/index.js';
+            fjs.parentNode.insertBefore(js, fjs);
+        }(document, 'script', '_2chat'));
+    </script>
+</body>
+</html>
