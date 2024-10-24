@@ -5,12 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Chat Widget</title>
     <style>
-        /* Example CSS to position the chat icon */
-        #_2chat-widget {
-            position: fixed;
-            top: 20px; /* Adjust the distance from the top */
-            right: 20px; /* Adjust the distance from the right */
-            z-index: 1000; /* Ensure it stays on top of other elements */
+        /* Force the chat widget to be at the top-right corner */
+        #_2chat-widget-container {
+            position: fixed !important; /* Ensure it is fixed */
+            top: 20px !important; /* Adjust the distance from the top */
+            right: 20px !important; /* Adjust the distance from the right */
+            z-index: 1000 !important; /* Ensure it stays on top of other elements */
         }
     </style>
 </head>
@@ -22,7 +22,7 @@
             statusMessage: 'We typically reply within 1 hour',
             chatMessage: 'Hey there! 👋\nHow can we help you?',
             placeholder: 'Type your message...',
-            position: 'right',
+            position: 'right', /* Default positioning might be ignored */
             colorScheme: 'automatic',
             showNotification: true,
         };
